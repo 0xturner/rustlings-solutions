@@ -34,12 +34,8 @@ mod tests {
         let order_template = create_order_template();
         let your_order = Order {
             name: String::from("Hacker in Rust"),
-            year: 2019,
-            made_by_phone: false,
-            made_by_mobile: false,
-            made_by_email: true,
-            item_number: 123,
             count: 1,
+            ..order_template
         };
         assert_eq!(your_order.name, "Hacker in Rust");
         assert_eq!(your_order.year, order_template.year);

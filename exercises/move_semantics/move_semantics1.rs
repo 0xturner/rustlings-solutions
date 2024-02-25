@@ -1,10 +1,9 @@
 // move_semantics1.rs
 // Execute `rustlings hint move_semantics1` or use the `hint` watch subcommand for a hint.
 
+
 fn main() {
     let vec0 = Vec::new();
-
-    let thing = 5;
 
     let mut vec1 = fill_vec(vec0);
 
